@@ -1,0 +1,85 @@
+{
+  
+    "courses": [
+        {
+            "id": 1,
+            "slug": "bezopasnost-truda",
+            "title": "Безопасность и Охрана Труда",
+            "breadcrumb": "Безопасность и Охрана Труда",
+            "banner": "/education/bezopasnost-truda.png"
+          },
+          {
+            "id": 2,
+            "slug": "pozharno-tekhnicheskiy-minimum",
+            "title": "Пожарно-Технический Минимум",
+            "breadcrumb": "Пожарно-Технический Минимум",
+             "banner": "/education/pozharno-tekhnicheskiy-minimum.png"
+          },
+          {
+            "id": 3,
+            "slug": "promyshlennaya-bezopasnost",
+            "title": "Промышленная безопасность",
+            "breadcrumb": "Промышленная безопасность",
+             "banner": "/education/promyshlennaya-bezopasnost.png"
+          },
+          {
+            "id": 4,
+            "slug": "elektrobezopasnost",
+            "title": "Электробезопасность",
+            "breadcrumb": "Электробезопасность",
+             "banner": "/education/elektrobezopasnost.png"
+          },
+          {
+            "id": 5,
+            "slug": "antiterror",
+            "title": "Антитеррор",
+            "breadcrumb": "Антитеррор",
+             "banner": "/education/antiterror.png"
+          },
+          {
+            "id": 6,
+            "slug": "antikorrupciya",
+            "title": "Антикоррупция",
+            "breadcrumb": "Антикоррупция",
+             "banner": "/education/antikorrupciya.png"
+          },
+          {
+            "id": 7,
+            "slug": "pervaya-pomoshch",
+            "title": "Первая доврачебная помощь",
+            "breadcrumb": "Первая доврачебная помощь",
+             "banner": "/education/pervaya-pomoshch.png"
+          },
+          {
+            "id": 8,
+            "slug": "attestaciya-itr",
+            "title": "Аттестация ИТР",
+            "breadcrumb": "Аттестация ИТР",
+             "banner": "/education/attestaciya-itr.png"
+          },
+          {
+            "id": 9,
+            "slug": "ekologicheskaya-bezopasnost",
+            "title": "Экологическая безопасность",
+            "breadcrumb": "Экологическая безопасность",
+             "banner": "/education/ekologicheskaya-bezopasnost.png"
+          }
+    ],
+    "contacts": {
+      "company": "ТОО Hot Solutions",
+      "address": "A05HOY4, Республика Казахстан, г. Алматы, ул. Толе би, 189Д, 2 этаж, 202 кабинет",
+      "phones": [
+        "+7 707 354 54 56",
+        "+7 727 354 54 56",
+        "+7 700 354 54 56",
+        "+7 747 354 54 56"
+      ],
+      "email": "info@hotsolutions.kz",
+      "social": {
+        "instagram": "https://instagram.com/hotsolutions.kz",
+        "telegram": "https://t.me/hotsolutions1",
+        "whatsapp": "https://api.whatsapp.com/send?phone=77073545456&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D0%BF%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0"
+      }
+  }
+
+}
