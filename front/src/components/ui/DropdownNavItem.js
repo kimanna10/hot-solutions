@@ -15,7 +15,7 @@ export default function DropdownNavItem({ label, href, items = [] }) {
   }, [href]);
 
   return (
-    <li className="relative group inline-block">
+    <li className="relative inline-block group">
       <button
         onClick={handleClick}
         className={`hover:text-grey-light py-2 px-1.5 transition cursor-pointer ${
@@ -29,7 +29,7 @@ export default function DropdownNavItem({ label, href, items = [] }) {
       </button>
 
       {items.length > 0 && (
-        <div className="absolute left-0 top-full mt-0 hidden group-hover:block bg-secondary shadow z-50 min-w-max">
+        <div className="absolute left-0 z-50 hidden mt-0 shadow top-full group-hover:block bg-secondary min-w-max">
           <ul className="py-2">
             {items.map((item) => {
               const isSubActive = pathname === item.href;

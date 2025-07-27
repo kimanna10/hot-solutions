@@ -2,12 +2,22 @@
 
 @theme {
   --color-primary: oklch(0.38 0.0057 78.26); /* grey #44423F */
-  --color-grey-87: oklch(0.38 0.0057 78.26 / 80% ); /* grey #44423F 87% */
+  --color-grey-87: oklch(0.38 0.0057 78.26 / 80%); /* grey #44423F 87% */
   --color-secondary: oklch(0.7394 0.1761 50.88); /* orange #FF842C */
   --color-orange-80: oklch(0.7394 0.1761 50.88 / 80%); /* orange #FF842C 80% */
 
   --color-grey-light: oklch(0.8203 0 0); /* grey light #C4C4C4 */
 
   --font-exo-2: "Exo 2";
+  --font-zamenhof: "Zamenhof";
+}
+html {
+  scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Zamenhof";
+  src: url("/fonts/zamenhof-outline.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

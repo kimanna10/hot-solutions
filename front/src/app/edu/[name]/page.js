@@ -1,13 +1,14 @@
 import Container from "@/components/layouts/Container";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import LinkBlock from "@/components/ui/LinkBlock";
-import { getCourseBySlug, getCourses } from "@/lib/api/courses";
+import { getCourseBySlug, getCourses } from "@/data/data.js";
 import Image from "next/image";
 
 export default async function CoursePage({ params }) {
   const { name } = await params;
-  const course = await getCourseBySlug(name);
-  const courses = await getCourses();
+
+  const course = getCourseBySlug(name);
+  const courses = getCourses();
 
   if (!course) {
     return <div>Курс не найден</div>;

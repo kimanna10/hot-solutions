@@ -1,11 +1,11 @@
-import { getContacts } from "@/lib/api/contacts";
+import { getContacts } from "@/data/data.js";
 import Link from "next/link";
 import InstagramIcon from "../icons/Instagram";
 import TelegramIcon from "../icons/Telegram";
 import WhatsappIcon from "../icons/Whatsapp";
 
 export default async function ContactInfo() {
-  const contact = await getContacts();
+  const contact = getContacts();
   return (
     <address className="not-italic space-y-1.5 text-base">
       <p className="">{contact.company}</p>

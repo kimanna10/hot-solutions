@@ -1,0 +1,209 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "slug": "bezopasnost-truda",
+            "title": "Безопасность и Охрана Труда",
+            "breadcrumb": "Безопасность и Охрана Труда",
+            "banner": "/education/bezopasnost-truda.png"
+          },
+          {
+            "id": 2,
+            "slug": "pozharno-tekhnicheskiy-minimum",
+            "title": "Пожарно-Технический Минимум",
+            "breadcrumb": "Пожарно-Технический Минимум",
+             "banner": "/education/pozharno-tekhnicheskiy-minimum.png"
+          },
+          {
+            "id": 3,
+            "slug": "promyshlennaya-bezopasnost",
+            "title": "Промышленная безопасность",
+            "breadcrumb": "Промышленная безопасность",
+             "banner": "/education/promyshlennaya-bezopasnost.png"
+          },
+          {
+            "id": 4,
+            "slug": "elektrobezopasnost",
+            "title": "Электробезопасность",
+            "breadcrumb": "Электробезопасность",
+             "banner": "/education/elektrobezopasnost.png"
+          },
+          {
+            "id": 5,
+            "slug": "antiterror",
+            "title": "Антитеррор",
+            "breadcrumb": "Антитеррор",
+             "banner": "/education/antiterror.png"
+          },
+          {
+            "id": 6,
+            "slug": "antikorrupciya",
+            "title": "Антикоррупция",
+            "breadcrumb": "Антикоррупция",
+             "banner": "/education/antikorrupciya.png"
+          },
+          {
+            "id": 7,
+            "slug": "pervaya-pomoshch",
+            "title": "Первая доврачебная помощь",
+            "breadcrumb": "Первая доврачебная помощь",
+             "banner": "/education/pervaya-pomoshch.png"
+          },
+          {
+            "id": 8,
+            "slug": "attestaciya-itr",
+            "title": "Аттестация ИТР",
+            "breadcrumb": "Аттестация ИТР",
+             "banner": "/education/attestaciya-itr.png"
+          },
+          {
+            "id": 9,
+            "slug": "ekologicheskaya-bezopasnost",
+            "title": "Экологическая безопасность",
+            "breadcrumb": "Экологическая безопасность",
+             "banner": "/education/ekologicheskaya-bezopasnost.png"
+          }
+    ],
+    "contacts": {
+      "company": "ТОО Hot Solutions",
+      "address": "A05HOY4, Республика Казахстан, г. Алматы, ул. Толе би, 189Д, 2 этаж, 202 кабинет",
+      "phones": [
+        "+7 707 354 54 56",
+        "+7 727 354 54 56",
+        "+7 700 354 54 56",
+        "+7 747 354 54 56"
+      ],
+      "email": "info@hotsolutions.kz",
+      "social": {
+        "instagram": "https://instagram.com/hotsolutions.kz",
+        "telegram": "https://t.me/hotsolutions1",
+        "whatsapp": "https://api.whatsapp.com/send?phone=77073545456&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D0%BF%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0"
+      }
+    },
+    "posters": [
+      {
+        "id": "standart",
+        "name": "Пакет: Стандарт",
+        "items": [
+          "posters/mery-bezzopasnosty.jpg",
+          "posters/pamytka-pri-rabote-s-personalnym-komputerom.jpg",
+          "posters/poroshkovye-ognetushel.jpg",
+          "posters/kak-potyshit-pozhar.jpg",
+          "posters/osvobozhdenie-postradavshego-ot-toka.jpg",
+          "posters/predvaritelnaya-podgotovka.jpg",
+          "posters/deystviya-naseleniya-pri-selevyh-potokah-i-opolznyah.jpg",
+          "posters/okazanie-pervoy-pomoshi-pri-perelomah.jpg",
+          "posters/pervaya-pomosh-pri-krovotecheniyah.jpg",
+          "posters/antiterror.jpg"
+        ]
+      },
+      {
+        "id": "optimalnyy",
+        "name": "Пакет: Оптимальный",
+        "items": [
+          "posters/vidy-i-haarakter-instruktagey.jpg",
+          "posters/mery-bezzopasnosty.jpg",
+          "posters/pamytka-pri-rabote-s-personalnym-komputerom.jpg",
+          "posters/instruktag-po-pozharboy-bezopasnosty.jpg",
+          "posters/poroshkovye-ognetushel.jpg",
+          "posters/kak-potyshit-pozhar.jpg",
+          "posters/electrobezopasnost.jpg",
+          "posters/osvobozhdenie-postradavshego-ot-toka.jpg",
+          "posters/predvaritelnaya-podgotovka.jpg",
+          "posters/deystviya-naseleniya-pri-selevyh-potokah-i-opolznyah.jpg",
+          "posters/okazanie-pervoy-pomoshi-pri-perelomah.jpg",
+          "posters/pervaya-pomosh-pri-krovotecheniyah.jpg",
+          "posters/antiterror.jpg",
+          "posters/antiterroristicheskaya-bezopasnost.jpg"
+        ]
+      },
+      {
+        "id": "universalnyy",
+        "name": "Пакет: Универсальный",
+        "items": [
+          "posters/vidy-i-haarakter-instruktagey.jpg",
+          "posters/mery-bezzopasnosty.jpg",
+          "posters/pamytka-pri-rabote-s-personalnym-komputerom.jpg",
+          "posters/instruktag-po-pozharboy-bezopasnosty.jpg",
+  
+          "posters/pozharnoe-oborudovanie.jpg",
+          "posters/poroshkovye-ognetushel.jpg",
+          "posters/yglekislotnye-ognetyshitely.jpg",
+          "posters/kak-potyshit-pozhar.jpg",
+  
+          "posters/electrobezopasnost.jpg",
+          "posters/osvobozhdenie-postradavshego-ot-toka.jpg",
+          "posters/electrobezopasn0st-do-1000V.jpg",
+          "posters/predvaritelnaya-podgotovka.jpg",
+  
+          "posters/deystvia-naselenia-pri-zemletresenia.jpg",
+          "posters/deystviya-naseleniya-pri-selevyh-potokah-i-opolznyah.jpg",
+          "posters/okazanie-pervoy-pomoshi-pri-perelomah.jpg",
+          "posters/pervaya-pomosh-pri-krovotecheniyah.jpg",
+          "posters/antiterror.jpg",
+          "posters/antiterroristicheskaya-bezopasnost.jpg"
+        ]
+      },
+      {
+        "id": "zhurnaly",
+        "name": "Журналы",
+        "items": [
+          "zharnaly/zhurnal-neschastnih-sluchaev.jpg",
+          "zharnaly/zhurnal-ognetushiteley.jpg",
+          "zharnaly/zhurnal-ohrana-truda.jpg",
+          "zharnaly/zhurnal-pozharnoy-bezopasnosty.jpg",
+          "zharnaly/zhurnal-registracii-instructazha.jpg",
+          "zharnaly/zhurnal-sredstv.jpg",
+          "zharnaly/zhurnal-ucheta-electrobezopasnosti.jpg",
+          "zharnaly/zhurnal-vvodnogo-instruktazha.jpg",
+          "zharnaly/zhurnal-sistem-ustanovok.jpg"
+        ]
+      }
+    ],
+    "gos": [
+      "/gos/gerb.png",
+      "/gos/prokuratura.png",
+      "/gos/mvd.png",
+      "/gos/kazmchs.png"
+    ],
+    "partners": [
+      "/partners/abr-logo.png",
+      "/partners/alina-group-logo.png",
+      "/partners/almaenergy-logo.png",
+      "/partners/almaty-electro-trans-logo.png",
+      "/partners/alser-logo.png",
+      "/partners/astana-motors-logo.png",
+      "/partners/astana-stroyinvest-logo.png",
+      "/partners/atamura-logo.jpg",
+      "/partners/azia-agro-food-logo.png",
+      "/partners/bazis-a-logo.png",
+      "/partners/br-logo.png",
+      "/partners/dostyk-plaza-logo.png",
+      "/partners/ecoplast-logo.png",
+      "/partners/enko.png",
+      "/partners/ernst-young-logo.png",
+      "/partners/evereststroy-logo.webp",
+      "/partners/freedom-logo.png",
+      "/partners/green-recycle-logo.webp",
+      "/partners/hyundai-logo.png",
+      "/partners/kpk-logo.png",
+      "/partners/krmu.png",
+      "/partners/lt-elecom-logo.png",
+      "/partners/mabetex-group-logo.png",
+      "/partners/mega.png",
+      "/partners/mok-logo.png",
+      "/partners/prorex-logo.png",
+      "/partners/qazaqstroy-logo.png",
+      "/partners/rams-logo.png",
+      "/partners/rgbrand-logo.png",
+      "/partners/salem-social-logo.png",
+      "/partners/sdu-logo.png",
+      "/partners/technoavia-logo.png",
+      "/partners/technodom-logo.webp",
+      "/partners/technofood-logo.png",
+      "/partners/terra-motors-logo.webp",
+      "/partners/zeta-logo.png",
+      "/partners/zst-logo.svg"
+    ]
+  }
+  

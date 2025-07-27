@@ -1,11 +1,11 @@
-import { getCourses } from "@/lib/api/courses";
+import { getCourses } from "@/data/data.js";
 import Link from "next/link";
 import ContactInfo from "./ContactInfo";
 import Container from "./Container";
 import Logo from "./Logo";
 
 export default async function Footer() {
-  const footerLinks = await getCourses();
+  const footerLinks = getCourses();
 
   return (
     <footer className="text-white font-medium ">
@@ -72,8 +72,8 @@ export default async function Footer() {
           </div>
         </Container>
       </div>
-      <div className="bg-grey-87 text-sm">
-        <Container className="flex justify-between items-center py-1.5">
+      <div className="bg-grey-87 text-sm py-1.5">
+        <Container className="flex justify-between items-center ">
           <Logo />
 
           <div className="text-right">
