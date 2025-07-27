@@ -10,7 +10,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 
-/* eslint-disable-next-line */
 import "@/styles/banner-slider.css";
 
 import { getGos } from "@/data/data.js";

@@ -10,14 +10,13 @@ export default function PartnersSlider() {
   return (
     <Marquee speed={40} gradient={false} pauseOnClick={true}>
       {partners.map((src, i) => (
-        <div className="h-28 flex justify-center">
+        <div className="flex justify-center h-28" key={i}>
           <Image
-            key={i}
             src={src}
             alt={`partner-${i}`}
             width={100}
             height={100}
-            className="my-0 mx-13 object-contain"
+            className="object-contain my-0 mx-13"
           />
         </div>
       ))}
