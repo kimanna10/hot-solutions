@@ -8,7 +8,7 @@ import Logo from "./Logo";
 
 export default function Header() {
   return (
-    <header className="bg-primary text-white font-medium  text-base sticky top-0 z-50">
+    <header className="sticky top-0 z-50 text-base font-medium text-white bg-primary">
       <Container className="flex justify-between py-1">
         <div className="flex items-center gap-3.5">
           <Logo />
@@ -113,7 +113,7 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex items-center gap-3.5">
-          <address className="flex flex-col text-right not-italic ">
+          <address className="flex flex-col not-italic text-right ">
             <Link
               href="tel:+77473545456"
               title="Позвонить"
@@ -130,7 +130,7 @@ export default function Header() {
             </Link>
           </address>
           <Link
-            href="/"
+            href="https://portal.hot-solutions.kz"
             title="Образовательный портал"
             aria-label="Перейти на образовательный портал"
           >

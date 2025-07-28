@@ -13,25 +13,25 @@ export default async function Home() {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover"
+          className="object-cover w-full h-full"
           preload="auto"
         >
           <source src="/videos/banner.mp4" type="video/mp4" />
           <source src="/videos/banner.webm" type="video/webm" />
           Ваш браузер не поддерживает видео.
         </video>
-        <Container className="text-white absolute inset-0 z-10">
+        <Container className="absolute inset-0 z-10 text-white">
           <BannerSlider />
         </Container>
       </section>
 
-      <section className="bg-primary py-12">
+      <section className="py-12 bg-primary">
         <Container className="">
           <div className="grid grid-cols-5 gap-4">
             {courses.map((course, i) => (
               <div
                 key={i}
-                className="bg-white h-32 flex items-center justify-center p-4 transition duration-300 hover:shadow-xl  cursor-pointer"
+                className="flex items-center justify-center h-32 p-4 transition duration-300 bg-white cursor-pointer hover:shadow-xl"
               >
                 <p>course.title</p>
               </div>

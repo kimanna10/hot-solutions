@@ -21,3 +21,8 @@ export const getGos = () => db.gos;
 
 // Партнеры
 export const getPartners = () => db.partners;
+
+// Экспертные работы
+export const getExpertOverview = () => db.expert.overview;
+
+export const getExpertItems = () => db.expert.items;

@@ -29,7 +29,7 @@ export default function PosterSection({
                 height={100}
                 width={100}
                 alt={`poster-${i}`}
-                className="w-full h-auto rounded shadow"
+                className="w-full h-auto"
               />
             ))}
           </div>

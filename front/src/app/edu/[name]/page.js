@@ -4,6 +4,14 @@ import LinkBlock from "@/components/ui/LinkBlock";
 import { getCourseBySlug, getCourses } from "@/data/data.js";
 import Image from "next/image";
 
+export async function generateStaticParams() {
+  const courses = getCourses();
+
+  return courses.map((course) => ({
+    name: course.slug,
+  }));
+}
+
 export default async function CoursePage({ params }) {
   const { name } = await params;
 
@@ -27,7 +35,7 @@ export default async function CoursePage({ params }) {
         <Container className="text-white">
           <h1 className="text-3xl font-bold py-2.5">{course.title}</h1>
         </Container>
-        <div className="w-full h-32 relative">
+        <div className="relative w-full h-32">
           <Image
             src={course.banner}
             alt={course.title}
@@ -36,7 +44,7 @@ export default async function CoursePage({ params }) {
           />
         </div>
         <Container className="bg-primary">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-1 py-8">
+          <div className="grid grid-cols-1 gap-1 py-8 md:grid-cols-3 lg:grid-cols-4">
             {courses.map((item) => (
               <LinkBlock key={item.slug} href={`/edu/${item.slug}`}>
                 <p className="leading-none">{item.title}</p>

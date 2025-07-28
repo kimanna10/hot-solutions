@@ -2,7 +2,7 @@ import PosterSection from "@/components/blocks/PosterSection";
 import Container from "@/components/layouts/Container";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
-export default function Poligrafiya() {
+export default async function Poligrafiya() {
   const breadcrumbs = [
     { label: "Главная", href: "/" },
     { label: "Полигафия", href: `/poligrafiya` },

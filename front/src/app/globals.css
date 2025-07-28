@@ -6,6 +6,7 @@
   --color-secondary: oklch(0.7394 0.1761 50.88); /* orange #FF842C */
   --color-orange-80: oklch(0.7394 0.1761 50.88 / 80%); /* orange #FF842C 80% */
 
+  --color-grey: oklch(0.7794 0 0); /* grey  #B7B7B7 */
   --color-grey-light: oklch(0.8203 0 0); /* grey light #C4C4C4 */
 
   --font-exo-2: "Exo 2";

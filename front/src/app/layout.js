@@ -1,6 +1,9 @@
 import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
+import FullPageLoader from "@/components/ui/FullPageLoader";
 import { Exo_2, Geist, Geist_Mono } from "next/font/google";
+import { Suspense } from "react";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,9 +32,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable}  ${exo2.variable} font-exo-2  antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <Suspense fallback={<FullPageLoader />}>
+          <Header />
+          {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );
