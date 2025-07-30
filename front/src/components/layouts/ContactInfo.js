@@ -9,7 +9,7 @@ export default async function ContactInfo() {
   return (
     <address className="not-italic space-y-1.5 text-base">
       <p className="">{contact.company}</p>
-      <p className="leading-none">{contact.address}</p>
+      <p className="leading-snug">{contact.address}</p>
       <div className="flex flex-col gap-2.5">
         {contact.phones.map((phone, i) => (
           <Link
