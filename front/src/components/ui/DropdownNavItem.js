@@ -44,6 +44,7 @@ export default function DropdownNavItem({ label, href, items = [], onClose }) {
                     className={`block hover:text-primary transition px-4 py-1 ${
                       isSubActive ? "text-primary" : "text-white"
                     }`}
+                    onClick={onClose}
                   >
                     {item.label}
                   </Link>

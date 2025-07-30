@@ -8,7 +8,7 @@ export default async function ContactInfo() {
   const contact = getContacts();
   return (
     <address className="not-italic space-y-1.5 text-base">
-      <p className="">{contact.company}</p>
+      <p className="font-bold">{contact.company}</p>
       <p className="leading-snug">{contact.address}</p>
       <div className="flex flex-col gap-2.5">
         {contact.phones.map((phone, i) => (

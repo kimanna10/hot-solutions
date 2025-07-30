@@ -37,7 +37,7 @@ export default function GallerySlider() {
         {images.map((src, i) => (
           <SwiperSlide key={i}>
             <img
-              src={src}
+              src={` ${src}`}
               alt={`cloudinary-img-${i}`}
               className="w-full h-[400px] object-contain"
             />

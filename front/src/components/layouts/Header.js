@@ -8,6 +8,8 @@ import NavLink from "@/components/ui/NavLink";
 import Container from "./Container";
 import Logo from "./Logo";
 
+import Modal from "@/components/ui/Modal";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -22,7 +24,6 @@ export default function Header() {
               <li>
                 <NavLink href="/about">О компании</NavLink>
               </li>
-
               <DropdownNavItem
                 label="Обучение"
                 href="/edu"
@@ -56,7 +57,6 @@ export default function Header() {
                   },
                 ]}
               />
-
               <DropdownNavItem
                 label="Экспертные работы"
                 href="/ekspertnye-raboty"
@@ -87,7 +87,6 @@ export default function Header() {
                   },
                 ]}
               />
-
               <DropdownNavItem
                 label="Полиграфия"
                 href="/poligrafiya"
@@ -111,6 +110,7 @@ export default function Header() {
                 ]}
               />
 
+              <Modal />
               <li>
                 <NavLink href="/contact">Контакты</NavLink>
               </li>
@@ -172,7 +172,7 @@ export default function Header() {
       {/* Мобильное меню */}
       <div
         className={`overflow-auto transition-all duration-500 ease-in-out lg:hidden absolute right-0 left-0  bg-primary ${
-          isMenuOpen ? "max-h-screen " : "max-h-0 "
+          isMenuOpen ? "max-h-screen" : "max-h-0 "
         }`}
       >
         <Container className="py-2">
@@ -219,7 +219,7 @@ export default function Header() {
                 onClose={() => setIsMenuOpen(false)}
               />
 
-              <DropdownNavItem
+              {/* <DropdownNavItem
                 label="Экспертные работы"
                 href="/ekspertnye-raboty"
                 items={[
@@ -249,8 +249,16 @@ export default function Header() {
                   },
                 ]}
                 onClose={() => setIsMenuOpen(false)}
-              />
+              /> */}
 
+              <li>
+                <NavLink
+                  href="/ekspertnye-raboty"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Экспертные работы
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   href="/poligrafiya"
@@ -260,6 +268,7 @@ export default function Header() {
                 </NavLink>
               </li>
 
+              <Modal />
               <li>
                 <NavLink href="/contact" onClick={() => setIsMenuOpen(false)}>
                   Контакты

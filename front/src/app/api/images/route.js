@@ -11,7 +11,7 @@ export async function GET() {
   try {
     const { resources } = await cloudinary.api.resources({
       type: "upload",
-      prefix: "hot-solutions/",
+      prefix: "hotsolutions/gallery/",
       max_results: 100,
     });
 

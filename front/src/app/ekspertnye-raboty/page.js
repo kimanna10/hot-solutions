@@ -1,4 +1,5 @@
 import Container from "@/components/layouts/Container";
+import LawLayout from "@/components/layouts/LawLayout";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
 import { getExpertItems, getExpertOverview } from "@/data/data";
@@ -77,17 +78,9 @@ export default async function Expert() {
         >
           <Container className="space-y-3">
             <h2 className="text-2xl font-bold text-secondary">{item.title}</h2>
-            <p className="text-base text-primary">{item.desc}</p>
+            <p className="text-base text-justify text-primary">{item.desc}</p>
           </Container>
-          {item.law && (
-            <div className="bg-secondary">
-              <Container>
-                <p className="my-5 text-base text-center text-white">
-                  {item.law}
-                </p>
-              </Container>
-            </div>
-          )}
+          {item.law && <LawLayout law={item.law} />}
 
           {item.paragraph?.length > 0 && (
             <div className="text-primary">
@@ -108,14 +101,14 @@ export default async function Expert() {
                 )}
 
                 {item.paragraph.map((p, i) => (
-                  <p key={i} className="text-base">
+                  <p key={i} className="text-base text-justify">
                     {p}
                   </p>
                 ))}
               </Container>
             </div>
           )}
-          <Container>
+          <Container className="text-center">
             <Button variant="primary" size="lg">
               Заказать
             </Button>

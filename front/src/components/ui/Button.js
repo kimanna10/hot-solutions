@@ -19,6 +19,10 @@ export default function Button({
   if (variant === "secondary")
     variantClass =
       "bg-transparent text-primary outline-2 outline-secondary outline-offset-[-2px] hover:text-white hover:bg-secondary hover:outline-primary hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.3)]";
+
+  if (variant === "outlined")
+    variantClass =
+      "bg-transparent text-primary outline-2 outline-primary outline-offset-[-2px] hover:shadow-[0_0_8px_4px_rgba(0,0,0,0.25)]";
   //   if (variant === "danger")
   //     variantClass = "bg-red-600 text-white hover:bg-red-700";
   //   if (variant === "icon")
@@ -35,7 +39,7 @@ export default function Button({
   const iconOnlyClass = isIconOnly ? "p-2" : "";
   const gapClass = icon && children ? "gap-2" : "";
 
-  const finalClass = `inline-flex items-center justify-center text-base font-semibold transition-all cursor-pointer duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${variantClass} ${sizeClass} ${disabledClass} ${iconOnlyClass} ${gapClass} ${className}`;
+  const finalClass = `inline-flex items-center justify-center text-base font-semibold transition-all cursor-pointer duration-200  ${variantClass} ${sizeClass} ${disabledClass} ${iconOnlyClass} ${gapClass} ${className}`;
 
   return (
     <button
@@ -45,7 +49,7 @@ export default function Button({
       disabled={disabled || loading}
     >
       {loading ? (
-        <span className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full" />
+        <span className="w-4 h-4 border-2 border-white rounded-full animate-spin border-t-transparent" />
       ) : (
         <>
           {icon && iconPosition === "left" && <span>{icon}</span>}

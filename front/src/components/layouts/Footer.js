@@ -8,12 +8,12 @@ export default async function Footer() {
   const footerLinks = getCourses();
 
   return (
-    <footer className="text-white font-medium ">
-      <div className="bg-primary py-10">
+    <footer className="font-medium text-white ">
+      <div className="py-10 bg-primary">
         <Container className="flex justify-between">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-15">
             <nav aria-label="Навигация в подвале" className="">
-              <h4 className="text-2xl mb-6">Hot Solutions</h4>
+              <h4 className="mb-6 text-2xl">Hot Solutions</h4>
               <ul className="space-y-1.5 text-base">
                 <li>
                   <Link href="/" className="block hover:text-grey-light">
@@ -50,13 +50,13 @@ export default async function Footer() {
             </nav>
 
             <nav aria-label="Навигация в подвале" className="">
-              <h4 className="text-2xl mb-6">Обучение</h4>
+              <h4 className="mb-6 text-2xl">Обучение</h4>
               <ul className="space-y-1.5 text-base">
                 {footerLinks.map((link) => (
                   <li key={link.id}>
                     <Link
-                      href={link.slug}
-                      className="hover:text-grey-light block"
+                      href={`/edu/${link.slug}`}
+                      className="block hover:text-grey-light"
                     >
                       {link.title}
                     </Link>
@@ -66,14 +66,14 @@ export default async function Footer() {
             </nav>
 
             <div>
-              <h4 className="text-2xl mb-6">Контакты</h4>
+              <h4 className="mb-6 text-2xl">Контакты</h4>
               <ContactInfo />
             </div>
           </div>
         </Container>
       </div>
       <div className="bg-grey-87 text-sm py-1.5">
-        <Container className="flex justify-between items-center ">
+        <Container className="flex items-center justify-between ">
           <Logo />
 
           <div className="text-right">

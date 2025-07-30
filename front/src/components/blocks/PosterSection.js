@@ -21,7 +21,7 @@ export default function PosterSection({
 
       <div className="py-5">
         <Container className="space-y-5">
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-3 gap-5 lg:grid-cols-4">
             {poster.items.map((src, i) => (
               <Image
                 key={i}
