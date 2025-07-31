@@ -8,7 +8,7 @@ import NavLink from "@/components/ui/NavLink";
 import Container from "./Container";
 import Logo from "./Logo";
 
-import Modal from "@/components/ui/Modal";
+import Modal from "@/components/ui/PriceNav";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

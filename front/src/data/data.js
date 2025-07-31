@@ -26,3 +26,5 @@ export const getPartners = () => db.partners;
 export const getExpertOverview = () => db.expert.overview;
 
 export const getExpertItems = () => db.expert.items;
+
+export const getEducationInfo = () => db.education;

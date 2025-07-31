@@ -71,40 +71,55 @@ export default async function CoursePage({ params }) {
           </h2>
           {course.desc.map((item, i) => (
             <div
-              className={`flex gap-8 lg:flex-row flex-col ${
+              className={`flex gap-8 lg:flex-row flex-col items-center  ${
                 i % 2 === 0 ? "" : "lg:flex-row-reverse"
               }`}
               key={i}
             >
               <Image
-                src={course.banner}
+                src={item.img}
                 alt={course.title}
-                className="flex-1 object-cover"
-                width={100}
-                height={100}
+                className="object-cover sm:h-60 lg:flex-2/5 w-full lg:w-0"
+                width={400}
+                height={500}
               />
-              <p className="flex-1 text-justify">{item.text}</p>
+              <p className="flex-3/5 text-justify">{item.text}</p>
             </div>
           ))}
         </Container>
       </section>
       <section className="py-8">
         <Container className="space-y-8 ">
-          <h2 className="text-2xl font-bold text-secondary">
-            На курсе мы изучим :
-          </h2>
-          <ul className="space-y-3">
-            {course.topics.map((topic, i) => (
-              <li key={i} className="flex items-center gap-5">
-                <SquareCheck
-                  size={30}
-                  strokeWidth={1}
-                  className="flex-shrink-0"
-                />
-                <p className="text-base leading-tight">{topic}</p>
-              </li>
-            ))}
-          </ul>
+          {course.topics.length > 0 ? (
+            <>
+              <h2 className="text-2xl font-bold text-secondary">
+                На курсе мы изучим:
+              </h2>
+              <ul className="space-y-3">
+                {course.topics.map((topic, i) => (
+                  <li key={i} className="flex items-center gap-5">
+                    <SquareCheck
+                      size={30}
+                      strokeWidth={1}
+                      className="flex-shrink-0"
+                    />
+                    <p className="text-base leading-tight">{topic}</p>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <>
+              {course.def.map((def, i) => (
+                <div key={i} className="space-y-3">
+                  <h2 className="text-2xl font-bold text-secondary">
+                    {def.title}
+                  </h2>
+                  <p className="text-justify">{def.desc}</p>
+                </div>
+              ))}
+            </>
+          )}
         </Container>
       </section>
       <section>
@@ -122,7 +137,17 @@ export default async function CoursePage({ params }) {
                 </span>
                 <div className=" text-primary">
                   <h3 className="text-lg font-bold">{aspects[i]}</h3>
-                  <p className="text-base"> {aspect}</p>
+                  {aspect.includes("\n") ? (
+                    <div className="">
+                      {aspect.split("\n").map((line, j) => (
+                        <p key={j} className="text-base">
+                          {line.trim()}
+                        </p>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-base">{aspect}</p>
+                  )}
                 </div>
               </div>
             ))}
@@ -139,17 +164,39 @@ export default async function CoursePage({ params }) {
       </section>
       <section className="py-8">
         <Container className="space-y-6">
-          <h2 className="text-2xl font-bold text-primary">Программа курса</h2>
-          <ul>
-            {course.program.map((prog, i) => (
-              <li
-                key={i}
-                className="py-2 text-base font-bold border-b border-b-grey-light text-secondary"
-              >
-                {prog}
-              </li>
-            ))}
-          </ul>
+          {course.program.length > 0 ? (
+            <>
+              <h2 className="text-2xl font-bold text-primary">
+                Программа курса
+              </h2>
+              <ul>
+                {course.program.map((prog, i) => (
+                  <li
+                    key={i}
+                    className="py-2 text-base font-bold border-b border-b-grey-light text-secondary"
+                  >
+                    {prog}
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <>
+              <h2 className="text-2xl font-bold text-primary">
+                Список необходимых документов для прохождения аттестации ИТР:
+              </h2>
+              <ul>
+                {course.docs.map((doc, i) => (
+                  <li
+                    key={i}
+                    className="py-2 text-base font-bold border-b border-b-grey-light text-secondary"
+                  >
+                    {doc}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </Container>
       </section>
 
