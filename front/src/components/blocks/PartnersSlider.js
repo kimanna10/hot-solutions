@@ -8,15 +8,18 @@ export default function PartnersSlider() {
   const partners = getPartners();
 
   return (
-    <Marquee speed={40} gradient={false} pauseOnClick={true}>
+    <Marquee speed={90} gradient={false} pauseOnClick={true}>
       {partners.map((src, i) => (
-        <div className="flex justify-center h-28" key={i}>
+        <div
+          className="flex justify-center items-center h-40 overflow-hidden"
+          key={i}
+        >
           <Image
             src={src}
             alt={`partner-${i}`}
-            width={100}
+            width={80}
             height={100}
-            className="object-contain my-0 mx-13"
+            className="object-contain my-0 lg:mx-14 mx-6 "
           />
         </div>
       ))}

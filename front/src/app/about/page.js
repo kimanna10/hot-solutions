@@ -1,6 +1,7 @@
 import GallerySlider from "@/components/blocks/GallerySlider";
 import Container from "@/components/layouts/Container";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import Image from "next/image";
 
 export default async function About() {
   const breadcrumbs = [
@@ -29,21 +30,30 @@ export default async function About() {
         </div>
       </section>
 
-      <section className="py-5 ">
-        <Container>
-          <iframe
-            src="/files/presentation.pdf"
-            className="w-full h-[600px]"
-            title="Презентация Hot Solutions"
-          ></iframe>
-        </Container>
-      </section>
+      <section className="relative">
+        <div className="py-10">
+          <Container>
+            <iframe
+              src="/files/presentation.pdf"
+              className="w-full h-[600px]"
+              title="Презентация Hot Solutions"
+            ></iframe>
+          </Container>
+        </div>
 
-      <section className="py-10">
-        <Container>
-          <h2 className="mb-5 text-2xl font-bold">Фотогалерея</h2>
-          <GallerySlider />
-        </Container>
+        <div className="py-10">
+          <Container>
+            <h2 className="mb-5 text-2xl font-bold">Фотогалерея</h2>
+            <GallerySlider />
+          </Container>
+        </div>
+        <Image
+          src={"/fire-orange-bg.svg"}
+          width={200}
+          height={100}
+          className="absolute top-0 right-0 object-cover w-auto h-full"
+          alt="fire-orange-bg"
+        />
       </section>
     </main>
   );

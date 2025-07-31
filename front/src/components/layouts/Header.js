@@ -172,7 +172,7 @@ export default function Header() {
       {/* Мобильное меню */}
       <div
         className={`overflow-auto transition-all duration-500 ease-in-out lg:hidden absolute right-0 left-0  bg-primary ${
-          isMenuOpen ? "max-h-screen" : "max-h-0 "
+          isMenuOpen ? "h-screen" : "h-0 "
         }`}
       >
         <Container className="py-2">

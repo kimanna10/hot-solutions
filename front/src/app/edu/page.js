@@ -40,7 +40,7 @@ export default async function Education() {
                   width={1000}
                   height={1000}
                   alt={item.banner}
-                  className="object-cover h-40"
+                  className="object-cover h-44 "
                 />
                 <p className="leading-none p-5">{item.title}</p>
               </Link>
