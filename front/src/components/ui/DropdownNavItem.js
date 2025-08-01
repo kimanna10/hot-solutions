@@ -1,5 +1,6 @@
 "use client";
-import { ChevronDown } from "lucide-react";
+import { LuChevronDown } from "react-icons/lu";
+
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback } from "react";
@@ -26,7 +27,7 @@ export default function DropdownNavItem({ label, href, items = [], onClose }) {
         aria-expanded="false"
       >
         {label}
-        <ChevronDown
+        <LuChevronDown
           size={16}
           className={`inline-block group-hover:rotate-180 transition`}
         />

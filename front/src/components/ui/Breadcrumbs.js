@@ -1,5 +1,6 @@
 import Container from "@/components/layouts/Container";
-import { ChevronRight } from "lucide-react";
+import { LuChevronRight } from "react-icons/lu";
+
 import Link from "next/link";
 
 export default function Breadcrumbs({ items }) {
@@ -19,7 +20,7 @@ export default function Breadcrumbs({ items }) {
               >
                 {item.label}
               </Link>
-              {index < items.length - 1 && <ChevronRight size={22} />}
+              {index < items.length - 1 && <LuChevronRight size={22} />}
             </li>
           ))}
         </ol>
