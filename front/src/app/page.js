@@ -3,7 +3,7 @@ import PartnersSlider from "@/components/blocks/PartnersSlider";
 import Container from "@/components/layouts/Container";
 import Button from "@/components/ui/Button";
 import { getCompanyInfo, getCourses } from "@/data/data.js";
-import { SquareCheck } from "lucide-react";
+import { CiSquareCheck } from "react-icons/ci";
 
 export default async function Home() {
   const courses = getCourses();
@@ -77,9 +77,9 @@ export default async function Home() {
             <ul className="py-8 space-y-3 bg-primary/80 lg:bg-transparent lg:px-0 px-5 lg:my-0 my-10">
               {company.back.map((back, i) => (
                 <li key={i} className="flex items-center gap-5 lg:max-w-100 ">
-                  <SquareCheck
+                  <CiSquareCheck
                     size={40}
-                    strokeWidth={1}
+                    strokeWidth={0.1}
                     className="flex-shrink-0"
                   />
                   <p className="font-medium leading-tight">{back}</p>
