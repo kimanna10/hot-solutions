@@ -86,6 +86,11 @@ export default async function Home() {
                 </li>
               ))}
             </ul>
+            <div className="xl:relative">
+              <div className="xl:absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 border-8 border-secondary bg-primary py-7 px-12 text-center">
+                <p className="text-2xl font-bold">Что Вы получаете?</p>
+              </div>
+            </div>
           </Container>
         </div>
       </section>

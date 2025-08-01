@@ -1,7 +1,8 @@
 import Container from "@/components/layouts/Container";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { getCourses, getEducationInfo } from "@/data/data";
-import { FileText } from "lucide-react";
+import { LuFileText } from "react-icons/lu";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -62,7 +63,7 @@ export default async function Education() {
                       key={i}
                       className="flex flex-col items-center gap-2 xl:min-h-44 md:min-h-60 min-h-auto"
                     >
-                      <FileText size={40} />
+                      <LuFileText size={40} />
                       <p className="font-bold">
                         {i + 1}. {work.item}
                       </p>
@@ -79,7 +80,7 @@ export default async function Education() {
                       key={i}
                       className="flex flex-col items-center gap-2 xl:min-h-44 md:min-h-60 min-h-auto"
                     >
-                      <FileText size={40} />
+                      <LuFileText size={40} />
                       <p className="font-bold">
                         {i + 1}. {work.item}
                       </p>

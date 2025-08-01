@@ -2,7 +2,8 @@ import Container from "@/components/layouts/Container";
 import LawLayout from "@/components/layouts/LawLayout";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
-import { SquareCheck } from "lucide-react";
+
+import { CiSquareCheck } from "react-icons/ci";
 
 import LinkBlock from "@/components/ui/LinkBlock";
 import { getCourseBySlug, getCourses } from "@/data/data.js";
@@ -98,11 +99,12 @@ export default async function CoursePage({ params }) {
               <ul className="space-y-3">
                 {course.topics.map((topic, i) => (
                   <li key={i} className="flex items-center gap-5">
-                    <SquareCheck
-                      size={30}
-                      strokeWidth={1}
+                    <CiSquareCheck
+                      size={32}
+                      strokeWidth={0.1}
                       className="flex-shrink-0"
                     />
+
                     <p className="text-base leading-tight">{topic}</p>
                   </li>
                 ))}

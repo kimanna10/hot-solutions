@@ -1,6 +1,9 @@
 "use client";
 import DropdownNavItem from "@/components/ui/DropdownNavItem";
-import { Menu, User, X } from "lucide-react";
+import { FiUser } from "react-icons/fi";
+import { IoClose } from "react-icons/io5";
+import { LuMenu } from "react-icons/lu";
+
 import Link from "next/link";
 import { useState } from "react";
 
@@ -139,7 +142,7 @@ export default function Header() {
             title="Образовательный портал"
             aria-label="Перейти на образовательный портал"
           >
-            <User size={24} />
+            <FiUser size={24} />
           </Link>
         </div>
 
@@ -151,7 +154,8 @@ export default function Header() {
             aria-label={isMenuOpen ? "Закрыть меню" : "Открыть меню"}
           >
             {/* Бургер иконка */}
-            <Menu
+
+            <LuMenu
               size={28}
               className={`absolute transition-opacity duration-500 ${
                 isMenuOpen ? "opacity-0 " : "opacity-100 "
@@ -159,8 +163,9 @@ export default function Header() {
             />
 
             {/* Крестик */}
-            <X
-              size={28}
+
+            <IoClose
+              size={32}
               className={`absolute transition-opacity duration-500 ${
                 isMenuOpen ? "opacity-100 " : "opacity-0 "
               }`}
@@ -178,6 +183,11 @@ export default function Header() {
         <Container className="py-2">
           <nav aria-label="Мобильная навигация">
             <ul className="flex flex-col gap-1">
+              <li>
+                <NavLink href="/" onClick={() => setIsMenuOpen(false)}>
+                  Главная
+                </NavLink>
+              </li>
               <li>
                 <NavLink href="/about" onClick={() => setIsMenuOpen(false)}>
                   О компании

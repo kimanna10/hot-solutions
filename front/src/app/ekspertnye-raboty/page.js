@@ -3,8 +3,9 @@ import LawLayout from "@/components/layouts/LawLayout";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
 import { getExpertItems, getExpertOverview } from "@/data/data";
-import { SquareCheck } from "lucide-react";
 import Image from "next/image";
+
+import { CiSquareCheck } from "react-icons/ci";
 
 export default async function Expert() {
   const breadcrumbs = [
@@ -53,9 +54,9 @@ export default async function Expert() {
             <ul className="space-y-4">
               {overview.map((item, i) => (
                 <li key={i} className="flex items-center gap-5">
-                  <SquareCheck
-                    size={30}
-                    strokeWidth={1}
+                  <CiSquareCheck
+                    size={32}
+                    strokeWidth={0.1}
                     className="flex-shrink-0"
                   />
                   <p className="text-base leading-tight">{item}</p>

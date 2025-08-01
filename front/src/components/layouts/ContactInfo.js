@@ -31,6 +31,24 @@ export default async function ContactInfo() {
           {contact.email}
         </Link>
 
+        <Link
+          href="/files/offert.pdf"
+          title="Публичная оферта"
+          aria-label="Публичная оферта"
+          target="_blank"
+        >
+          Публичная оферта
+        </Link>
+
+        <Link
+          href="/files/policy.pdf"
+          title="Политика конфиденциальности"
+          aria-label="Политика конфиденциальности"
+          target="_blank"
+        >
+          Политика конфиденциальности
+        </Link>
+
         <div className="flex gap-8">
           <InstagramIcon
             href={contact.social.instagram}
