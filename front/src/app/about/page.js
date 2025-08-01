@@ -32,13 +32,7 @@ export default async function About() {
 
       <section className="relative">
         <div className="py-10">
-          <Container>
-            <iframe
-              src="/files/presentation.pdf"
-              className="w-full h-[600px]"
-              title="Презентация Hot Solutions"
-            ></iframe>
-          </Container>
+          <Container></Container>
         </div>
 
         <div className="py-10">

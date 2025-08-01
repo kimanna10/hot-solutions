@@ -1,5 +1,5 @@
 import Container from "@/components/layouts/Container";
-import Button from "@/components/ui/Button";
+import ApplicationButton from "@/components/ui/ApplicationButton";
 import { getPosterById } from "@/data/data.js";
 import Image from "next/image";
 
@@ -21,22 +21,30 @@ export default function PosterSection({
 
       <div className="py-5">
         <Container className="space-y-5">
-          <div className="grid grid-cols-3 gap-5 lg:grid-cols-4">
-            {poster.items.map((src, i) => (
-              <Image
-                key={i}
-                src={`/${src}`}
-                height={100}
-                width={100}
-                alt={`poster-${i}`}
-                className="w-full h-auto"
-              />
-            ))}
-          </div>
+          {tariff === "zhurnaly" ? (
+            <div className="space-y-3">
+              {poster.items.map((src, i) => (
+                <p key={i}>
+                  {i + 1}. {src}
+                </p>
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-3 gap-5 lg:grid-cols-4">
+              {poster.items.map((src, i) => (
+                <Image
+                  key={i}
+                  src={`/${src}`}
+                  height={100}
+                  width={100}
+                  alt={`poster-${i}`}
+                  className="w-full h-auto"
+                />
+              ))}
+            </div>
+          )}
 
-          <Button variant="primary" size="lg">
-            Заказать
-          </Button>
+          <ApplicationButton />
         </Container>
       </div>
     </section>

@@ -1,9 +1,5 @@
-import {
-  Description,
-  Dialog,
-  DialogPanel,
-  DialogTitle,
-} from "@headlessui/react";
+"use client";
+import ModalWrapper from "@/components/layouts/ModalWrapper";
 import { useState } from "react";
 
 export default function Modal() {
@@ -19,24 +15,15 @@ export default function Modal() {
           Цены
         </button>
       </li>
-      <Dialog
-        open={isOpen}
+      <ModalWrapper
+        isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        className="relative z-50"
+        title="Price"
+        description="Цены описание Цены описание Цены описание Цены описание Цены описание Цены описание"
+        bg="/modal/modal-price-bg.png"
       >
-        <div className="fixed inset-0 flex items-center justify-center w-screen p-4 cursor-pointer bg-primary/20 backdrop-blur-sm">
-          <DialogPanel className="max-w-lg p-5 space-y-4 text-white cursor-default bg-primary">
-            <DialogTitle className="font-bold">Сюда надо цены</DialogTitle>
-            <Description>
-              This will permanently deactivate your account
-            </Description>
-            <p>
-              Are you sure you want to deactivate your account? All of your data
-              will be permanently removed.
-            </p>
-          </DialogPanel>
-        </div>
-      </Dialog>
+        Price
+      </ModalWrapper>
     </>
   );
 }

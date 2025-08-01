@@ -1,10 +1,10 @@
 import Container from "@/components/layouts/Container";
 import LawLayout from "@/components/layouts/LawLayout";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
-import Button from "@/components/ui/Button";
 import { getExpertItems, getExpertOverview } from "@/data/data";
 import Image from "next/image";
 
+import ApplicationButton from "@/components/ui/ApplicationButton";
 import { CiSquareCheck } from "react-icons/ci";
 
 export default async function Expert() {
@@ -110,9 +110,7 @@ export default async function Expert() {
             </div>
           )}
           <Container className="text-center">
-            <Button variant="primary" size="lg">
-              Заказать
-            </Button>
+            <ApplicationButton />
           </Container>
         </section>
       ))}

@@ -530,16 +530,17 @@
         "id": "zhurnaly",
         "name": "Журналы",
         "items": [
-          "zharnaly/zhurnal-neschastnih-sluchaev.jpg",
-          "zharnaly/zhurnal-ognetushiteley.jpg",
-          "zharnaly/zhurnal-ohrana-truda.jpg",
-          "zharnaly/zhurnal-pozharnoy-bezopasnosty.jpg",
-          "zharnaly/zhurnal-registracii-instructazha.jpg",
-          "zharnaly/zhurnal-sredstv.jpg",
-          "zharnaly/zhurnal-ucheta-electrobezopasnosti.jpg",
-          "zharnaly/zhurnal-vvodnogo-instruktazha.jpg",
-          "zharnaly/zhurnal-sistem-ustanovok.jpg"
-        ]
+          "Журнал регистрации несчастных случаев, связанных с трудовой деятельностью и иных повреждений здоровья на производстве",
+          "Журнал учёта огнетушителей",
+          "Журнал учёта выдачи инструкций по охране труда для работников",
+          "Журнал №__ учёта проведения инструктажей по пожарной безопасности",
+          "Журнал регистрации инструктажей по безопасности и охране труда на рабочем месте",
+          "Журнал выдачи средств индивидуальной защиты",
+          "Журнал учёта присвоения группы I по электробезопасности неэлектротехническому персоналу",
+          "Журнал регистрации вводного инструктажа",
+          "Эксплуатационный журнал систем и установок пожарной автоматики"
+]
+
       }
     ],
     "gos": [

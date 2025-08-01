@@ -1,4 +1,5 @@
 import BannerSlider from "@/components/blocks/BannerSlider";
+import ContactForm from "@/components/blocks/ContactForm";
 import PartnersSlider from "@/components/blocks/PartnersSlider";
 import Container from "@/components/layouts/Container";
 import Button from "@/components/ui/Button";
@@ -107,6 +108,8 @@ export default async function Home() {
           <PartnersSlider />
         </Container>
       </section>
+
+      <ContactForm />
     </main>
   );
 }
